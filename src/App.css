@@ -12,11 +12,28 @@ body {
 }
 
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scale(0.92);
 }
 .shrinkHeight {
   height: 40px;
 }
 .h34 {
   height: 34px;
+}
+.selecter {
+  color: #0070d1;
+}
+.scale92 {
+  transform: scale(0.92);
+}
+.scaleUnset {
+  transform: scale(1) !important;
+}
+.openSubNav {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.hhh {
+  font-family: "Shared-Nav-Icons";
 }
