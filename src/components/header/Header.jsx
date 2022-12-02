@@ -3,8 +3,9 @@ import { FaAngleDown } from "react-icons/fa";
 import { HiOutlineSearch } from "react-icons/hi";
 import { PlayStaIcon } from "../../logo";
 import SecondaryNav from "./secondaryNav/SecondaryNav";
+import navArray from "../../data";
 
-const navArray = ["Games", "Hardware", "News", "Shop", "Support"];
+// const navArray = ["Games", "Hardware", "News", "Shop", "Support"];
 
 const Header = () => {
   const ulRef = useRef(null);
@@ -68,15 +69,20 @@ const Header = () => {
             <PlayStaIcon />
           </span>
           <ul ref={ulRef} className="flex items-center gap-2">
-            {navArray.map((item, index) => (
+            {navArray.map((result, index) => (
               <li
                 onClick={handleClickOpen}
                 key={index}
                 className="flex items-center gap-[2px] cursor-pointer hover:text-[#0070d1] group"
               >
-                <span className="text-[0.875rem] font-semibold">{item}</span>
+                <span className="text-[0.875rem] font-semibold">
+                  {result.title}
+                </span>
                 <FaAngleDown className="mt-1 text-[#999] transition-all group-hover:text-[#0070d1]" />
-                <SecondaryNav />
+                <SecondaryNav
+                  item1={result.item.item1}
+                  item2={result.item.item2}
+                />
               </li>
             ))}
           </ul>
