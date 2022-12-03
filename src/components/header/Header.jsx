@@ -3,7 +3,8 @@ import { FaAngleDown } from "react-icons/fa";
 import { HiOutlineSearch } from "react-icons/hi";
 import { PlayStaIcon } from "../../logo";
 import SecondaryNav from "./secondaryNav/SecondaryNav";
-import navArray from "../../data";
+import { navArray } from "../../data";
+import { Link } from "react-router-dom";
 
 // const navArray = ["Games", "Hardware", "News", "Shop", "Support"];
 
@@ -14,6 +15,12 @@ const Header = () => {
 
   const handleClickOpen = (e) => {
     const parentElem = e.target.parentElement;
+    if (
+      parentElem.tagName.toLowerCase() === "a" ||
+      e.target.tagName.toLowerCase() === "a"
+    ) {
+      return;
+    }
     parentElem.classList.toggle("selecter");
 
     const svgClick = parentElem.querySelector("svg");
@@ -61,13 +68,15 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className="header sticky top-0 bg-white h-16 transition-all duration-[0.5s]"
+      className="header sticky z-10 top-0 bg-white h-16 transition-all duration-[0.5s]"
     >
       <div className="relative pl-5 pr-5 h-full flex justify-between items-center">
         <div className="nav flex">
-          <span ref={logoRef} className="logo mr-3">
-            <PlayStaIcon />
-          </span>
+          <Link to="/" className="flex items-center justify-center">
+            <span ref={logoRef} className="logo mr-3">
+              <PlayStaIcon />
+            </span>
+          </Link>
           <ul ref={ulRef} className="flex items-center gap-2">
             {navArray.map((result, index) => (
               <li

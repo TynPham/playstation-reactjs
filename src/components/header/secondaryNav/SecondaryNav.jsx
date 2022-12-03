@@ -8,9 +8,10 @@ const SecondaryNav = ({ item1, item2 }) => {
     <div className="subNav max-h-[220px] w-full bg-white absolute left-0 top-[0px] z-[-1] transition-all duration-500 opacity-0 invisible">
       {item1 ? (
         <div className="flex items-center justify-center gap-6 mt-1 mb-4">
-          {item1.map((item) => (
+          {item1.map((item, index) => (
             <a
-              href="https://www.playstation.com/en-vn/ps5/games/?smcid=pdc%3Aen-vn%3Aprimary%20nav%3Amsg-games%3Aps5"
+              key={index}
+              href={item.link}
               className="flex flex-col items-center p-[15px_30px] hover:shadow-shadowBox"
               target="_blank"
               rel="noreferrer"
@@ -27,8 +28,9 @@ const SecondaryNav = ({ item1, item2 }) => {
       )}
       {item2 ? (
         <div className="flex items-center justify-center py-4 mt-3 gap-8 border-t border-solid border-[#ccc]">
-          {item2.map((item) => (
+          {item2.map((item, index) => (
             <a
+              key={index}
               href="https://www.playstation.com/en-vn/editorial/this-month-on-playstation/great-ps4-games-upgraded-for-ps5/?smcid=pdc%3Aen-vn%3Aprimary%20nav%3Amsg-games%3Aps4-games-on-ps5"
               target="_blank"
               rel="noreferrer"

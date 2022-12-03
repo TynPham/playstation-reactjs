@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
+  overflow-x: hidden;
 }
 
 .rotate {
