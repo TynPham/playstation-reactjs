@@ -12,6 +12,12 @@ import fifaImgLogo from "../assets/image/fifa-logo.png";
 import game1Img from "../assets/image/game1.jpg";
 import game1ImgMin from "../assets/image/game1_2.jpg";
 import game1ImgLogo from "../assets/image/game1-logo.png";
+import racingImg from "../assets/image/racing.jpg";
+import racingImgMin from "../assets/image/racing-min.jpg";
+import racingImgLogo from "../assets/image/racing-logo.png";
+import godImg from "../assets/image/god.jpg";
+import godImgMin from "../assets/image/god-min.jpg";
+import godImgLogo from "../assets/image/god-logo.png";
 
 export const navArray = [
   {
@@ -128,23 +134,23 @@ export const newGame = [
     },
   },
   {
-    image: fifaImg,
-    imgMin: fifaImgMin,
-    logo: fifaImgLogo,
+    image: racingImg,
+    imgMin: racingImgMin,
+    logo: racingImgLogo,
     contents: {
-      title: "Feel it on the biggest stage",
+      title: "Run these streets",
       content:
-        "Experience the ultimate connection to the biggest tournament in world football with FIFA 23 and PS5.",
+        "The wait is over. Take over the city and stunt on the finest street racers in Lakeshore in Need for Speed™ Unbound, available now on PS5",
     },
   },
   {
-    image: game1Img,
-    imgMin: game1ImgMin,
-    logo: game1ImgLogo,
+    image: godImg,
+    imgMin: godImgMin,
+    logo: godImgLogo,
     contents: {
-      title: "Welcome to Black Iron",
+      title: "The Norse saga continues",
       content:
-        "Survive the horrors stalking Black Iron Prison and discover the secrets that lie beneath in this new story-driven survival horror, out now on PS5",
+        "Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go, available now on PS4 & PS5",
     },
   },
   {
