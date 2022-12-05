@@ -18,6 +18,11 @@ import racingImgLogo from "../assets/image/racing-logo.png";
 import godImg from "../assets/image/god.jpg";
 import godImgMin from "../assets/image/god-min.jpg";
 import godImgLogo from "../assets/image/god-logo.png";
+import psvr2Img from "../assets/image/psvr2.jpg";
+import psvr2ImgMin from "../assets/image/psvr2-min.jpg";
+import psvr2ImgLogo from "../assets/image/psvr2-logo.png";
+import christmasImg from "../assets/image/playstation-christmas.jpg";
+import christmasImgMin from "../assets/image/playstation-christmas-min.jpg";
 
 export const navArray = [
   {
@@ -114,6 +119,17 @@ export const navArray = [
 
 export const newGame = [
   {
+    image: christmasImg,
+    imgMin: christmasImgMin,
+    logo: "",
+    contents: {
+      primary: true,
+      title: "The PlayStation® Holiday Gift Guide",
+      content:
+        "Discover the best gift ideas for gamers on PS4 & PS5, from incredible games and accessories.",
+    },
+  },
+  {
     image: fifaImg,
     imgMin: fifaImgMin,
     logo: fifaImgLogo,
@@ -154,23 +170,13 @@ export const newGame = [
     },
   },
   {
-    image: fifaImg,
-    imgMin: fifaImgMin,
-    logo: fifaImgLogo,
+    image: psvr2Img,
+    imgMin: psvr2ImgMin,
+    logo: psvr2ImgLogo,
     contents: {
-      title: "Feel it on the biggest stage",
+      title: "Feel A New Real™",
       content:
-        "Experience the ultimate connection to the biggest tournament in world football with FIFA 23 and PS5.",
-    },
-  },
-  {
-    image: game1Img,
-    imgMin: game1ImgMin,
-    logo: game1ImgLogo,
-    contents: {
-      title: "Welcome to Black Iron",
-      content:
-        "Survive the horrors stalking Black Iron Prison and discover the secrets that lie beneath in this new story-driven survival horror, out now on PS5",
+        "Escape into worlds that feel truly real as virtual reality gaming takes a huge generational leap forward. Coming 22nd February 2023.",
     },
   },
 ];
