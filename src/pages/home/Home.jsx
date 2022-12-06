@@ -5,7 +5,7 @@ import Hardware from "../../hardware/Hardware";
 
 const Home = () => {
   return (
-    <div className="home h-[2000px]">
+    <div className=" home h-[2000px]">
       <Header />
       <IntroduceGame />
       <Hardware />

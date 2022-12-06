@@ -6,7 +6,7 @@ const ListIntroduce = ({ newGame, currIndex }) => {
       {newGame.map((game, index) => (
         <div
           key={index}
-          className={`hidden bg-[rgba(0,0,0,0.8)] transition-all opcityKf ${
+          className={`hidden transition-all opcityKf ${
             index === currIndex ? "visiab" : ""
           }`}
         >

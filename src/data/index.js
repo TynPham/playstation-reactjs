@@ -24,6 +24,14 @@ import psvr2ImgLogo from "../assets/image/psvr2-logo.png";
 import christmasImg from "../assets/image/playstation-christmas.jpg";
 import christmasImgMin from "../assets/image/playstation-christmas-min.jpg";
 
+import ps5Console from "../assets/image/ps5-console.png";
+import ps5ConsoleCover from "../assets/image/ps5-console-cover.jpg";
+import pulse3D from "../assets/image/3d-pulse.jpg";
+import dualSenseEdge from "../assets/image/DualSense-Edge.jpg";
+import dualSense from "../assets/image/dualsense.jpg";
+import cameraHD from "../assets/image/hd-camera.jpg";
+import remote from "../assets/image/media-remote.jpg";
+
 export const navArray = [
   {
     title: "Game",
@@ -178,5 +186,58 @@ export const newGame = [
       content:
         "Escape into worlds that feel truly real as virtual reality gaming takes a huge generational leap forward. Coming 22nd February 2023.",
     },
+  },
+];
+
+export const listHardware = [
+  {
+    smallTitle: "PS5 Console",
+    title: "PlayStation 5 Console",
+    content:
+      "Experience an all-new generation of incredible PlayStation games.",
+    image: ps5Console,
+    mt: false,
+  },
+  {
+    title: "DualSense Wireless Controller",
+    content:
+      "Immerse yourself in the gaming experience with a controller the supports responsive haptic feedback and dynamic trigger effects.",
+    image: dualSense,
+    mt: true,
+  },
+  {
+    title: "PULSE 3D Wireless Headset",
+    content:
+      "Enjoy a seamless wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles.",
+    image: pulse3D,
+    mt: true,
+  },
+  {
+    title: "DualSense Edge Wireless Controller",
+    content:
+      "Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.",
+    image: dualSenseEdge,
+    mt: true,
+  },
+  {
+    title: "Media remote",
+    content:
+      "Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.",
+    image: remote,
+    mt: false,
+  },
+  {
+    title: "HD Camera",
+    content:
+      "Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.",
+    image: cameraHD,
+    mt: false,
+  },
+  {
+    title: "PS5 Console Covers",
+    content:
+      "Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.",
+    image: ps5ConsoleCover,
+    mt: true,
   },
 ];

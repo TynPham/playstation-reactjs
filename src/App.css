@@ -55,6 +55,13 @@ body {
 .delayAnimation {
   animation-delay: 0.2s;
 }
+.flexdis {
+  display: flex;
+}
+.mbAndmt {
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
 
 @keyframes opacity {
   0% {
