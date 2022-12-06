@@ -10,9 +10,13 @@ const ListGame = ({ currIndex, handleClickChangeImg, newGame }) => {
           href="https://www.facebook.com/"
           className={`${
             index === currIndex ? "active" : ""
-          } hover:translate-y-[-0.75rem] rounded-[1rem] transition-all duration-[0.3s] flex items-end justify-center group hover:shadow-gameSd max-w-[210px] p-[2px]`}
+          } hover:translate-y-[-0.75rem] rounded-[1rem] transition-all flex items-end justify-center group hover:shadow-gameSd max-w-[210px] p-[2px]`}
         >
-          <button className="rounded-[1rem] overflow-hidden w-full opacity-70 group-hover:opacity-100">
+          <button
+            className={`rounded-[1rem] overflow-hidden w-full opacity-70 group-hover:opacity-100 ${
+              index === currIndex ? "opacity-100" : ""
+            }`}
+          >
             <img src={game.imgMin} alt="min" />
           </button>
         </span>
