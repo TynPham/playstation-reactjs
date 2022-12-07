@@ -16,6 +16,8 @@ module.exports = {
       boxShadow: {
         shadowBox: "1px 1px 5px #adadad",
         gameSd: "0 0.75rem 8px rgb(0 0 0 / 18%)",
+        cardSd: "0 4px 8px 0 rgb(0 0 0 /0.8)",
+        cardSd2: "0 4px 16px 0 rgb(0 0 0 /0.8)",
       },
     },
   },

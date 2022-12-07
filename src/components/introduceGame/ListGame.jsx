@@ -7,7 +7,6 @@ const ListGame = ({ currIndex, handleClickChangeImg, newGame }) => {
         <span
           onClick={() => handleClickChangeImg(index)}
           key={index}
-          href="https://www.facebook.com/"
           className={`${
             index === currIndex ? "active" : ""
           } hover:translate-y-[-0.75rem] rounded-[1rem] transition-all flex items-end justify-center group hover:shadow-gameSd max-w-[210px] p-[2px]`}

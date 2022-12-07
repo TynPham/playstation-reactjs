@@ -32,6 +32,12 @@ import dualSense from "../assets/image/dualsense.jpg";
 import cameraHD from "../assets/image/hd-camera.jpg";
 import remote from "../assets/image/media-remote.jpg";
 
+import currentMonthBg from "../assets/image/this-month.jpg";
+
+import card1 from "../assets/image/card-1.jpg";
+import card2 from "../assets/image/card-2.jpg";
+import card3 from "../assets/image/card-3.png";
+
 export const navArray = [
   {
     title: "Game",
@@ -239,5 +245,33 @@ export const listHardware = [
       "Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.",
     image: ps5ConsoleCover,
     mt: true,
+  },
+];
+
+export const currentMonthIntro = {
+  image: currentMonthBg,
+  contents: {
+    title: "THIS MONTH",
+    subTitle: "ON PLAYSTATION",
+    content:
+      "Check out this month's biggest releases along with dedicated features, guides and more.",
+  },
+  logo: null,
+  primary: false,
+  class: "text-[2.5rem leading-[3rem]",
+};
+
+export const listCard = [
+  {
+    image: card1,
+    content: "The best battle royale games on PS4 and PS5",
+  },
+  {
+    image: card2,
+    content: "The best strategy games on PS4 and PS5",
+  },
+  {
+    image: card3,
+    content: "The Playstation guide to creative gaming",
   },
 ];
