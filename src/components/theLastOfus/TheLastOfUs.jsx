@@ -1,5 +1,5 @@
 import React from "react";
-import { theLastOfUss } from "../../data";
+import { theLastOfUss } from "../../data/singleData";
 import Introduce from "../introduceGame/Introduce";
 
 const TheLastOfUs = () => {

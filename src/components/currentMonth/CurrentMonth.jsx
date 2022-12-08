@@ -1,5 +1,5 @@
 import React from "react";
-import { currentMonthIntro } from "../../data";
+import { currentMonthIntro } from "../../data/singleData";
 import Introduce from "../introduceGame/Introduce";
 import ListCard from "./ListCard";
 

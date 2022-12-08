@@ -73,6 +73,13 @@ body {
   cursor: not-allowed;
 }
 
+.newClass {
+  font-size: 1.125rem;
+  list-style: 1.75rem;
+  margin-top: 0.75rem;
+  font-weight: 400;
+}
+
 @keyframes opacity {
   0% {
     opacity: 0.4;

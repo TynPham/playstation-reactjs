@@ -32,14 +32,9 @@ import dualSense from "../assets/image/dualsense.jpg";
 import cameraHD from "../assets/image/hd-camera.jpg";
 import remote from "../assets/image/media-remote.jpg";
 
-import currentMonthBg from "../assets/image/this-month.jpg";
-
 import card1 from "../assets/image/card-1.jpg";
 import card2 from "../assets/image/card-2.jpg";
 import card3 from "../assets/image/card-3.png";
-
-import theLast from "../assets/image/the-last-of.jpg";
-import theLastLogo from "../assets/image/the-last-of-logo.png";
 
 export const navArray = [
   {
@@ -251,19 +246,6 @@ export const listHardware = [
   },
 ];
 
-export const currentMonthIntro = {
-  image: currentMonthBg,
-  contents: {
-    title: "THIS MONTH",
-    subTitle: "ON PLAYSTATION",
-    content:
-      "Check out this month's biggest releases along with dedicated features, guides and more.",
-  },
-  logo: null,
-  primary: false,
-  class: "text-[2.5rem leading-[3rem]",
-};
-
 export const listCard = [
   {
     image: card1,
@@ -278,13 +260,3 @@ export const listCard = [
     content: "The Playstation guide to creative gaming",
   },
 ];
-
-export const theLastOfUss = {
-  image: theLast,
-  logo: theLastLogo,
-  contents: {
-    primary: false,
-    title: "Available Now",
-    content: "Relive the beloved game that started it all - rebuilt for PS5.",
-  },
-};

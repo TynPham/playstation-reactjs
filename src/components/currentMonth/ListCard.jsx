@@ -1,5 +1,5 @@
 import React from "react";
-import { listCard } from "../../data";
+import { listCard } from "../../data/listData";
 import Card from "./Card";
 
 const ListCard = () => {

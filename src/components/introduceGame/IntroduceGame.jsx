@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { newGame } from "../../data";
+import { newGame } from "../../data/listData";
 import ListGame from "./ListGame";
 import ListIntroduce from "./ListIntroduce";
 

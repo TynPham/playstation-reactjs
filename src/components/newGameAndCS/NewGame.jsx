@@ -1,5 +1,6 @@
 import React from "react";
 import ListGame from "./ListGame";
+import { NewGameList } from "../../data/NewGameAndComingSoon";
 
 const NewGame = ({ NewGameRef }) => {
   return (
@@ -13,7 +14,7 @@ const NewGame = ({ NewGameRef }) => {
           Great PS5 and PS4 games available now
         </h5>
       </div>
-      <ListGame />
+      <ListGame listGame={NewGameList} />
     </div>
   );
 };

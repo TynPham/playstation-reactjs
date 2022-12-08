@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
@@ -13,7 +12,6 @@ const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
     }
 
     prevRef.current.classList.remove("clickable");
-
     prevRef.current.childNodes[0].classList.add("notClick");
 
     nextRef.current.classList.add("clickable");

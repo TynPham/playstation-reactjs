@@ -3,7 +3,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { HiOutlineSearch } from "react-icons/hi";
 import { PlayStaIcon } from "../../logo";
 import SecondaryNav from "./secondaryNav/SecondaryNav";
-import { navArray } from "../../data";
+import { navArray } from "../../data/listData";
 import { Link } from "react-router-dom";
 
 // const navArray = ["Games", "Hardware", "News", "Shop", "Support"];
