@@ -38,6 +38,9 @@ import card1 from "../assets/image/card-1.jpg";
 import card2 from "../assets/image/card-2.jpg";
 import card3 from "../assets/image/card-3.png";
 
+import theLast from "../assets/image/the-last-of.jpg";
+import theLastLogo from "../assets/image/the-last-of-logo.png";
+
 export const navArray = [
   {
     title: "Game",
@@ -275,3 +278,13 @@ export const listCard = [
     content: "The Playstation guide to creative gaming",
   },
 ];
+
+export const theLastOfUss = {
+  image: theLast,
+  logo: theLastLogo,
+  contents: {
+    primary: false,
+    title: "Available Now",
+    content: "Relive the beloved game that started it all - rebuilt for PS5.",
+  },
+};

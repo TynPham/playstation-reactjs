@@ -2,6 +2,8 @@ import React from "react";
 import CurrentMonth from "../../components/currentMonth/CurrentMonth";
 import Header from "../../components/header/Header";
 import IntroduceGame from "../../components/introduceGame/IntroduceGame";
+import NewGameAndCS from "../../components/newGameAndCS/NewGameAndCS";
+import TheLastOfUs from "../../components/theLastOfus/TheLastOfUs";
 import Hardware from "../../hardware/Hardware";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
       <IntroduceGame />
       <Hardware />
       <CurrentMonth />
+      <TheLastOfUs />
+      <NewGameAndCS />
     </div>
   );
 };

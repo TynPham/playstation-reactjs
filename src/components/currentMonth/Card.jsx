@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ card }) => {
   return (
-    <div className="w-[85%]">
+    <>
       <a href="https://www.facebook.com/">
         <img
           src={card.image}
@@ -13,7 +13,7 @@ const Card = ({ card }) => {
       <h4 className="text-[1.75rem] mt-7 font-medium text-center text-white">
         {card.content}
       </h4>
-    </div>
+    </>
   );
 };
 
