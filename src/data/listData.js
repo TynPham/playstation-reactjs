@@ -36,6 +36,15 @@ import card1 from "../assets/image/card-1.jpg";
 import card2 from "../assets/image/card-2.jpg";
 import card3 from "../assets/image/card-3.png";
 
+import ps4Slim from "../assets/image/ps4-slim.jpg";
+import double11 from "../assets/image/double11.jpg";
+import dualshock4 from "../assets/image/dualshock-4.jpg";
+
+import twitter from "../assets/image/twitter.jpg";
+import facebook from "../assets/image/facebook.jpg";
+import instagram from "../assets/image/instagram.jpg";
+import youtube from "../assets/image/youtube.png";
+
 export const navArray = [
   {
     title: "Game",
@@ -259,4 +268,81 @@ export const listCard = [
     image: card3,
     content: "The Playstation guide to creative gaming",
   },
+];
+
+export const exporePs4 = {
+  titles: {
+    title: "Explore PlayStation®4",
+    content:
+      "Incredible games, non-stop entertainment. There's never been a better time to enjoy PS4.",
+  },
+  data: [
+    {
+      image: ps4Slim,
+      contents: {
+        title: "PlayStation 4",
+        content: "Incredible games live on PS4, with 1TB storage.",
+      },
+    },
+    {
+      image: double11,
+      contents: {
+        title: "PlayStation VR",
+        content: "Over 500 games and experiences and counting. See them all.",
+      },
+    },
+    {
+      image: dualshock4,
+      contents: {
+        title: "Accessories",
+        content:
+          "Enhance your PS4 experience with a range of official accessories.",
+      },
+    },
+  ],
+};
+
+export const cardSlide = {
+  titles: {
+    title: "The latest news from PlayStation Blog",
+    content: "",
+  },
+};
+
+export const socialMedia = [
+  {
+    image: twitter,
+  },
+  {
+    image: facebook,
+  },
+  {
+    image: instagram,
+  },
+  {
+    image: youtube,
+  },
+];
+
+export const footerData = [
+  [
+    "Support",
+    "Privacy Policy",
+    "Website terms of use",
+    "PlayStation Studios",
+    "Legal Documents & Notices",
+    "About SIE",
+    "PlayStation and the",
+    "Environment",
+  ],
+  [
+    "Health warning",
+    "Age ratings",
+    "PlayStation careers",
+    "Intellectual property notices",
+    "Publisher&Developer",
+    "Relations",
+    "Site map",
+  ],
+  ["Facebook", "Youtube", "Instagram", "Twitter"],
 ];

@@ -17,7 +17,7 @@ const IntroHardware = ({ listHardware, indexActive }) => {
                 {hardware.content}
               </p>
             </div>
-            <button className="p-[3px] rounded-[2rem] mt-5 hover:outline-[3px] hover:outline hover:outline-[#0070cc] text-left w-[max-content] ">
+            <button className="p-[2px] rounded-[2rem] mt-5 hover:outline-[3px] hover:outline hover:outline-[#0070cc] text-left w-[max-content] ">
               <a
                 href="https://www.facebook.com/"
                 className=" rounded-[2rem] py-2 px-4 bg-[#0070cc] text-white font-semibold text-lg flex items-center"

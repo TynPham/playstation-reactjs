@@ -11,7 +11,7 @@ const DefaultLayout = () => {
         <Outlet />
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

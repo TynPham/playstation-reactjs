@@ -9,7 +9,7 @@ const NewGameAndCS = () => {
   const ComingSoonRef = useRef(null);
 
   return (
-    <div className="relative">
+    <div className="relative bg-[#121314] h-[750px]">
       <NewGame NewGameRef={NewGameRef} />
       <ComingSoon ComingSoonRef={ComingSoonRef} />
       <ButtonControl NewGameRef={NewGameRef} ComingSoonRef={ComingSoonRef} />
