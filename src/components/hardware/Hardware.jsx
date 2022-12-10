@@ -1,7 +1,7 @@
 import React from "react";
 import ListHardware from "./ListHardware";
 import { useState } from "react";
-import { listHardware } from "../data/listData";
+import { listHardware } from "../../data/listData";
 import IntroHardware from "./IntroHardware";
 
 const Hardware = () => {

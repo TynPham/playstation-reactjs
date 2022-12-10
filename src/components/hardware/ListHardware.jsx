@@ -18,7 +18,7 @@ const LisrHardware = ({ indexActive, setIndexActive, listHardware }) => {
           >
             <div>
               <img
-                src={hardware.image}
+                src={hardware.imageMin}
                 alt="hardware"
                 className="max-w-[130px] mb-6"
               />

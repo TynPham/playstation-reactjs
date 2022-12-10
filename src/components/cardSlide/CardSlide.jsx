@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../explorePs4/Title";
-import { cardSlide } from "../../data/listData";
+import { cardSlideData } from "../../data/cardSlideData";
 import CardSl from "./CardSl";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 const CardSlide = () => {
   return (
     <div>
-      <Title data={cardSlide.titles} />
+      <Title data={cardSlideData.titles} />
       <Swiper
         className="mt-16 px3-6 pb4"
         modules={[Navigation, Pagination]}
@@ -22,36 +22,11 @@ const CardSlide = () => {
         pagination={{ clickable: true }}
         loop={true}
       >
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSl />
-        </SwiperSlide>
+        {cardSlideData.data.map((card, index) => (
+          <SwiperSlide key={index} className="flex justify-center">
+            <CardSl card={card} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

@@ -26,11 +26,16 @@ import christmasImgMin from "../assets/image/playstation-christmas-min.jpg";
 
 import ps5Console from "../assets/image/ps5-console.png";
 import ps5ConsoleCover from "../assets/image/ps5-console-cover.jpg";
+import ps5ConsoleCoverMin from "../assets/image/ps5-console-cover-min.jpg";
 import pulse3D from "../assets/image/3d-pulse.jpg";
+import pulse3DMin from "../assets/image/3d-pulse-min.jpg";
 import dualSenseEdge from "../assets/image/DualSense-Edge.jpg";
+import dualSenseEdgeMin from "../assets/image/DualSense-Edge-min.jpg";
 import dualSense from "../assets/image/dualsense.jpg";
+import dualSenseMin from "../assets/image/dualsense-min.jpg";
 import cameraHD from "../assets/image/hd-camera.jpg";
 import remote from "../assets/image/media-remote.jpg";
+import remoteMin from "../assets/image/media-remote-min.jpg";
 
 import card1 from "../assets/image/card-1.jpg";
 import card2 from "../assets/image/card-2.jpg";
@@ -209,49 +214,49 @@ export const listHardware = [
     content:
       "Experience an all-new generation of incredible PlayStation games.",
     image: ps5Console,
-    mt: false,
+    imageMin: ps5Console,
   },
   {
     title: "DualSense Wireless Controller",
     content:
       "Immerse yourself in the gaming experience with a controller the supports responsive haptic feedback and dynamic trigger effects.",
     image: dualSense,
-    mt: true,
+    imageMin: dualSenseMin,
   },
   {
     title: "PULSE 3D Wireless Headset",
     content:
       "Enjoy a seamless wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles.",
     image: pulse3D,
-    mt: true,
+    imageMin: pulse3DMin,
   },
   {
     title: "DualSense Edge Wireless Controller",
     content:
       "Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.",
     image: dualSenseEdge,
-    mt: true,
+    imageMin: dualSenseEdgeMin,
   },
   {
     title: "Media remote",
     content:
       "Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.",
     image: remote,
-    mt: false,
+    imageMin: remoteMin,
   },
   {
     title: "HD Camera",
     content:
       "Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.",
     image: cameraHD,
-    mt: false,
+    imageMin: cameraHD,
   },
   {
     title: "PS5 Console Covers",
     content:
       "Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.",
     image: ps5ConsoleCover,
-    mt: true,
+    imageMin: ps5ConsoleCoverMin,
   },
 ];
 
@@ -300,13 +305,6 @@ export const exporePs4 = {
       },
     },
   ],
-};
-
-export const cardSlide = {
-  titles: {
-    title: "The latest news from PlayStation Blog",
-    content: "",
-  },
 };
 
 export const socialMedia = [

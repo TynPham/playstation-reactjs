@@ -8,7 +8,7 @@ const IntroHardware = ({ listHardware, indexActive }) => {
           key={index}
           className={`grid grid-cols-[1fr_2fr] pl-24 pr-16 gap-[6rem] hidden transition-all ${
             index === indexActive ? "flexdis" : ""
-          } ${hardware.mt ? "mbAndmt" : ""}`}
+          }`}
         >
           <div className="flex flex-col justify-center">
             <div className="text-black mt-6 ml-2">
