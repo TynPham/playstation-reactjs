@@ -4,7 +4,7 @@ import SocialCard from "./SocialCard";
 
 const SocialMedia = () => {
   return (
-    <div className="bg-[##f5f7fa]">
+    <div className="bg-[##f5f7fa] mt-8">
       <h3 className="text-center text-[2.15rem] font-light">
         Follow us on social media
       </h3>

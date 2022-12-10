@@ -5,7 +5,7 @@ import { exporePs4 } from "../../data/listData";
 
 const ExplorePs4 = () => {
   return (
-    <div className="pb-40">
+    <div className="pb-32">
       <Title data={exporePs4.titles} />
       <div className="grid grid-cols-3 px-40 mt-11">
         {exporePs4.data.map((product, index) => (

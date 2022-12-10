@@ -21,6 +21,12 @@ module.exports = {
         socialCardSd: "0 4px 8px 0 rgb(0 0 0 /0.16)",
         socialCardSd2: "0 4px 16px 0 rgb(0 0 0 /0.16)",
       },
+      colors: {
+        colorSilver: "rgb(107 107 107 /1)",
+      },
+      backgroundImage: {
+        bgLinear: "linear-gradient(rgb(243 243 243 /1),rgb(255 255 255 /1))",
+      },
     },
   },
   plugins: [],

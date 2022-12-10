@@ -80,6 +80,45 @@ body {
   font-weight: 400;
 }
 
+.hiddenText {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #0070cc !important;
+  color: #fff !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  top: 20% !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem !important;
+}
+.swiper-button-prev {
+  left: 34px !important;
+}
+.swiper-button-next {
+  right: 34px !important;
+}
+.px3-6 {
+  padding: 0 3.6rem !important;
+}
+.pb4 {
+  padding-bottom: 4rem !important;
+}
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
+  width: 17px !important;
+  height: 2px !important;
+  margin: 3px !important;
+}
+
 @keyframes opacity {
   0% {
     opacity: 0.4;

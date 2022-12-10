@@ -1,4 +1,5 @@
 import React from "react";
+import CardSlide from "../../components/cardSlide/CardSlide";
 import CurrentMonth from "../../components/currentMonth/CurrentMonth";
 import ExplorePs4 from "../../components/explorePs4/ExplorePs4";
 import Header from "../../components/header/Header";
@@ -21,6 +22,7 @@ const Home = () => {
       <TheLastOfUs />
       <NewGameAndCS />
       <ExplorePs4 />
+      <CardSlide />
       <SocialMedia />
     </div>
   );
