@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ card }) => {
+const Card = ({ card, classes }) => {
   return (
     <>
       <a href="https://www.facebook.com/">
@@ -13,9 +13,9 @@ const Card = ({ card }) => {
         />
       </a>
       <h4
-        className={`text-[1.75rem] mt-7 font-medium text-center text-white ${
-          card.newClass ? "newClass" : ""
-        }`}
+        className={`md:text-2xl text-[1.75rem] mt-7 font-medium text-center text-white ${
+          classes ? classes : ""
+        } ${card.newClass ? "newClass" : ""}`}
       >
         {card.content}
       </h4>

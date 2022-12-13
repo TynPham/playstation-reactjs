@@ -6,8 +6,6 @@ import SecondaryNav from "./secondaryNav/SecondaryNav";
 import { navArray } from "../../data/listData";
 import { Link } from "react-router-dom";
 
-// const navArray = ["Games", "Hardware", "News", "Shop", "Support"];
-
 const Header = () => {
   const ulRef = useRef(null);
   const headerRef = useRef(null);

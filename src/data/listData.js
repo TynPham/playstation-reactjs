@@ -100,8 +100,8 @@ export const navArray = [
         },
       ],
       item2: [
-        "ualSense wireless controller",
-        "ualSense wireless controller",
+        "DualSense wireless controller",
+        "PULSE 3D wireless headset",
         "DUALSHOCK 4 wireless controller",
         "PS5 & PS4 accessories ",
         "PlayStation VR",

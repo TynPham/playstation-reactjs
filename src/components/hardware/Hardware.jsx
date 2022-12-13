@@ -7,7 +7,7 @@ import IntroHardware from "./IntroHardware";
 const Hardware = () => {
   const [indexActive, setIndexActive] = useState(0);
   return (
-    <div>
+    <div className="md:mt-4">
       <IntroHardware indexActive={indexActive} listHardware={listHardware} />
       <ListHardware
         indexActive={indexActive}

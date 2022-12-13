@@ -17,10 +17,18 @@ const CardSlide = () => {
         className="mt-16 px3-6 pb4"
         modules={[Navigation, Pagination]}
         // spaceBetween={20}
-        slidesPerView={3}
+
         navigation
         pagination={{ clickable: true }}
         loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1023: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {cardSlideData.data.map((card, index) => (
           <SwiperSlide key={index} className="flex justify-center">

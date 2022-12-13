@@ -12,9 +12,6 @@ import TheLastOfUs from "../../components/theLastOfus/TheLastOfUs";
 const Home = () => {
   return (
     <div className="home">
-      <span className="hidden absolute top-0 -left-0 w-full h-full bg-white z-20 items-center justify-center md:flex sm:flex ">
-        updating...
-      </span>
       <Header />
       <IntroduceGame />
       <Hardware />

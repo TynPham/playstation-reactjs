@@ -9,9 +9,9 @@ const SocialMedia = () => {
         Follow us on social media
       </h3>
       <div className="flex justify-center mt-14">
-        <div className="grid grid-cols-4 justify-items-center w-[80%] px-80">
+        <div className="grid grid-cols-4 justify-items-center w-[80%] px-20">
           {socialMedia.map((social, index) => (
-            <div key={index}>
+            <div className="text-center" key={index}>
               <SocialCard social={social} />
             </div>
           ))}

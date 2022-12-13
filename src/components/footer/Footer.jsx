@@ -5,7 +5,7 @@ import { footerData } from "../../data/listData";
 const Footer = () => {
   return (
     <div className="footer bg-[#00439c] pt-12 mt-[7.5rem]">
-      <div className="grid grid-cols-2 grid-rows-[2fr_1fr] bg-[#00439c] px-24">
+      <div className="grid grid-cols-2 grid-rows-[2fr_1fr] bg-[#00439c] md:px-16 px-24">
         <div className="mt-6">
           <img
             className="w-[100px]"
@@ -20,7 +20,7 @@ const Footer = () => {
             Country / Region: Vietnam
           </a>
         </div>
-        <div className="grid grid-cols-3 text-white">
+        <div className="grid grid-cols-3 text-white gap-x-4">
           <ul>
             {footerData[0].map((data, index) => (
               <li className="mb-[0.5rem]" key={index}>

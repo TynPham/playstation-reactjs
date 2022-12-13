@@ -2,8 +2,8 @@ import React from "react";
 
 const Introduce = ({ game }) => {
   return (
-    <div>
-      <img src={game.image} alt="game" />
+    <div className="md:h-[26rem]">
+      <img className="h-full" src={game.image} alt="game" />
       <div
         className={`absolute ${
           game.contents.primary
@@ -12,13 +12,17 @@ const Introduce = ({ game }) => {
         } `}
       >
         {game.logo ? (
-          <img className="w-[80%] bottomToTop" src={game.logo} alt="logo" />
+          <img
+            className="md:w-[55%] w-[80%] bottomToTop"
+            src={game.logo}
+            alt="logo"
+          />
         ) : (
           ""
         )}
-        <div className="text-white mt-6 ml-2 invisible bottomToTop delayAnimation">
+        <div className="text-white md:mt-0 mt-6 ml-2 invisible bottomToTop delayAnimation">
           <h2
-            className={`${
+            className={`md:text-[1.75rem] ${
               game.contents.primary ? "text-[2.5rem] font-light" : "text-4xl"
             } ${game.class ? game.class : ""} `}
           >
@@ -31,7 +35,7 @@ const Introduce = ({ game }) => {
               ""
             )}
           </h2>
-          <p className="text-lg mt-5">{game.contents.content}</p>
+          <p className="md:text-base text-lg mt-5">{game.contents.content}</p>
         </div>
         <a
           href="https://www.facebook.com/"

@@ -5,7 +5,7 @@ import ListCard from "./ListCard";
 
 const CurrentMonth = () => {
   return (
-    <div className="relative mt-8 ">
+    <div className="relative mt-8 bg-[#26254f]">
       <div className="relative">
         <Introduce game={currentMonthIntro} />
       </div>

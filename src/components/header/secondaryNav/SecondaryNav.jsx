@@ -37,7 +37,7 @@ const SecondaryNav = ({ item1, item2 }) => {
               className="flex items-center"
             >
               <div className="bg-[#0070d1] w-2 h-2 rounded-full mr-2"></div>
-              <span className="relative text-black font-semibold text-[17px] hover:text-[#0070d1]">
+              <span className="relative text-black md:font-normal font-semibold md:text-[11px] text-[17px] hover:text-[#0070d1]">
                 {item}
               </span>
             </a>
