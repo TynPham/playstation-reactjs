@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialCard = ({ social }) => {
   return (
-    <button className="w-[82%]">
+    <button className="sm:w-full w-[82%]">
       <img
         src={social.image}
         alt="social"

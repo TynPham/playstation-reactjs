@@ -7,7 +7,7 @@ const CurrentMonth = () => {
   return (
     <div className="relative mt-8 bg-[#26254f]">
       <div className="relative">
-        <Introduce game={currentMonthIntro} />
+        <Introduce game={currentMonthIntro} classChange={true} />
       </div>
       <ListCard />
     </div>

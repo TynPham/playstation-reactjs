@@ -6,12 +6,18 @@ import Sony from "../../components/sony/Sony";
 const DefaultLayout = () => {
   return (
     <>
-      <Sony />
+      <div className="sm:hidden block">
+        <Sony />
+      </div>
+
       <div className="containerr">
         <Outlet />
       </div>
 
       <Footer />
+      <div className="sm:block hidden">
+        <Sony />
+      </div>
     </>
   );
 };

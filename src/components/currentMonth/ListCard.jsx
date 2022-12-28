@@ -4,9 +4,9 @@ import Card from "./Card";
 
 const ListCard = () => {
   return (
-    <div className="grid grid-cols-3 px-28 bg-[#26254f] pb-12 justify-items-center">
+    <div className="grid sm:grid-cols-1 grid-cols-3 sm:px-4 px-28 bg-[#26254f] pb-12 justify-items-center">
       {listCard.map((card, index) => (
-        <div key={index} className="w-[85%]">
+        <div key={index} className="sm:mt-8 sm:w-full w-[85%]">
           <Card card={card} />
         </div>
       ))}

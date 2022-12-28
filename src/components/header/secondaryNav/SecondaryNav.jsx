@@ -1,22 +1,23 @@
 import React from "react";
-// import ps5Logo from "../../../assets/image/ps5.png";
-// import ps4Logo from "../../../assets/image/ps4.png";
-// import vr from "../../../assets/image/ps-vr.png";
 
 const SecondaryNav = ({ item1, item2 }) => {
   return (
-    <div className="subNav max-h-[220px] w-full bg-white absolute left-0 top-[0px] z-[-1] transition-all duration-500 opacity-0 invisible">
+    <>
       {item1 ? (
-        <div className="flex items-center justify-center gap-6 mt-1 mb-4">
+        <div className="flex items-center flex-wrap sm:justify-between justify-center gap-6 mt-1 mb-4 sm:w-[95%] sm:px-4">
           {item1.map((item, index) => (
             <a
               key={index}
               href={item.link}
-              className="flex flex-col items-center p-[15px_30px] hover:shadow-shadowBox"
+              className="flex flex-col items-center sm:p-0 p-[15px_30px] hover:shadow-shadowBox"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="scale-[0.8]" src={item.logo} alt={item.name} />
+              <img
+                className="sm:scale-[0.6] scale-[0.8]"
+                src={item.logo}
+                alt={item.name}
+              />
               <span className="mt-[-0.5rem] text-black font-semibold text-[17px]">
                 {item.name}
               </span>
@@ -27,7 +28,7 @@ const SecondaryNav = ({ item1, item2 }) => {
         ""
       )}
       {item2 ? (
-        <div className="flex items-center justify-center py-4 mt-3 gap-8 border-t border-solid border-[#ccc]">
+        <div className="flex sm:flex-col sm:items-start items-center justify-center sm:pl-4 py-4 mt-3 sm:gap-2 gap-8 border-t border-solid border-[#ccc]">
           {item2.map((item, index) => (
             <a
               key={index}
@@ -46,7 +47,7 @@ const SecondaryNav = ({ item1, item2 }) => {
       ) : (
         ""
       )}
-    </div>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import logo from "../../assets/image/Sony.png";
 
 const Sony = () => {
   return (
-    <div className="h-9 bg-black w-full flex items-center justify-end">
+    <div className="relative z-10 h-9 bg-black w-full flex items-center justify-end">
       <a
         href="https://www.sony.com/en/"
         className="ml-auto"

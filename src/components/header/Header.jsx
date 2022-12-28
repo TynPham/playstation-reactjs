@@ -1,109 +1,87 @@
 import React, { useRef } from "react";
-import { FaAngleDown } from "react-icons/fa";
 import { HiOutlineSearch } from "react-icons/hi";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { PlayStaIcon } from "../../logo";
-import SecondaryNav from "./secondaryNav/SecondaryNav";
-import { navArray } from "../../data/listData";
 import { Link } from "react-router-dom";
+import NavLarge from "./NavLarge";
+import { DataHeaderNav } from "../../context/context";
+import NavSmall from "./NavSmall";
 
 const Header = () => {
   const ulRef = useRef(null);
   const headerRef = useRef(null);
   const logoRef = useRef(null);
+  const menuRef = useRef(null);
+  const closeRef = useRef(null);
+  const navSmRef = useRef(null);
 
-  const handleClickOpen = (e) => {
-    const parentElem = e.target.parentElement;
-    if (
-      parentElem.tagName.toLowerCase() === "a" ||
-      e.target.tagName.toLowerCase() === "a"
-    ) {
-      return;
-    }
-    parentElem.classList.toggle("selecter");
+  const handleClickMenu = () => {
+    menuRef.current.classList.add("hiddenEl");
+    closeRef.current.classList.add("blockEl");
+    navSmRef.current.classList.add("blockEl");
+  };
 
-    const svgClick = parentElem.querySelector("svg");
-
-    svgClick.classList.toggle("rotate");
-    svgClick.classList.toggle("selecter");
-    parentElem.querySelector(".subNav").classList.toggle("openSubNav");
-
-    const listSVG = ulRef.current.querySelectorAll("svg");
-    const listSVGdif = Object.values(listSVG).filter(
-      (item) => item !== svgClick
-    );
-    listSVGdif.forEach((item) => {
-      item.classList.remove("rotate");
-      item.parentElement.classList.remove("selecter");
-      item.classList.remove("selecter");
-      item.parentElement
-        .querySelector(".subNav")
-        .classList.remove("openSubNav");
-    });
-
-    let isOpen = false;
-
-    listSVG.forEach((item) => {
-      if (item.classList.contains("rotate")) {
-        isOpen = true;
-      }
-    });
-
-    if (isOpen) {
-      headerRef.current.classList.add("shrinkHeight");
-      logoRef.current.querySelector("svg").classList.add("h34");
-      listSVG.forEach((item) => {
-        item.previousElementSibling.classList.add("scale92");
-      });
-    } else {
-      headerRef.current.classList.remove("shrinkHeight");
-      logoRef.current.querySelector("svg").classList.remove("h34");
-      listSVG.forEach((item) => {
-        item.previousElementSibling.classList.remove("scale92");
-      });
-    }
+  const handleClickClose = () => {
+    menuRef.current.classList.remove("hiddenEl");
+    closeRef.current.classList.remove("blockEl");
+    navSmRef.current.classList.remove("blockEl");
   };
 
   return (
-    <div
-      ref={headerRef}
-      className="header sticky z-10 top-0 bg-white h-16 transition-all duration-[0.5s]"
+    <DataHeaderNav.Provider
+      value={{
+        ulRef,
+        headerRef,
+        logoRef,
+        menuRef,
+        closeRef,
+        navSmRef,
+      }}
     >
-      <div className="relative pl-5 pr-5 h-full flex justify-between items-center">
-        <div className="nav flex">
-          <Link to="/" className="flex items-center justify-center">
-            <span ref={logoRef} className="logo mr-3">
-              <PlayStaIcon />
-            </span>
-          </Link>
-          <ul ref={ulRef} className="flex items-center gap-2">
-            {navArray.map((result, index) => (
-              <li
-                onClick={handleClickOpen}
-                key={index}
-                className="flex items-center gap-[2px] cursor-pointer hover:text-[#0070d1] group"
+      <div
+        ref={headerRef}
+        className="header sm:fixed sticky z-10 top-0 w-full bg-white h-16 transition-all duration-[0.5s] sm:shadow-gameSd"
+      >
+        <div className="relative pl-5 pr-5 h-full flex justify-between items-center">
+          <div className="nav flex">
+            <Link
+              to="/"
+              className="flex items-center justify-center sm:absolute sm:left-1/2 sm:top-1/2 sm:translate-x-[-50%] sm:translate-y-[-50%]"
+            >
+              <span ref={logoRef} className="logo mr-3">
+                <PlayStaIcon />
+              </span>
+            </Link>
+            <NavLarge />
+            <NavSmall />
+          </div>
+          <div className="flex items-center">
+            <button className="sign-in bg-[#0070cc] text-white font-medium p-[0px_8px] rounded-2xl sm:mr-0 mr-5">
+              Sign In
+            </button>
+            <div className="flex items-center gap-4 sm:absolute sm:left-5">
+              <button
+                ref={menuRef}
+                className="menu text-xl sm:block hidden"
+                onClick={handleClickMenu}
               >
-                <span className="text-[0.875rem] font-semibold">
-                  {result.title}
-                </span>
-                <FaAngleDown className="mt-1 text-[#999] transition-all group-hover:text-[#0070d1]" />
-                <SecondaryNav
-                  item1={result.item.item1}
-                  item2={result.item.item2}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="flex items-center">
-          <button className="sign-in bg-[#0070cc] text-white font-medium p-[0px_8px] rounded-2xl mr-5">
-            Sign In
-          </button>
-          <button className="search text-xl">
-            <HiOutlineSearch />
-          </button>
+                <AiOutlineMenu />
+              </button>
+              <button
+                ref={closeRef}
+                className="menu text-xl hidden"
+                onClick={handleClickClose}
+              >
+                <AiOutlineClose />
+              </button>
+              <button className="search text-xl">
+                <HiOutlineSearch />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </DataHeaderNav.Provider>
   );
 };
 

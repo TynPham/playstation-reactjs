@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const ListGame = ({ currIndex, handleClickChangeImg, newGame }) => {
+const ListGame = ({
+  currIndex,
+  handleClickChangeImg,
+  newGame,
+  setcurrIndex,
+}) => {
+  useEffect(() => {
+    const autoTime = setTimeout(() => {
+      if (currIndex === newGame.length - 1) {
+        setcurrIndex(0);
+      } else {
+        setcurrIndex(currIndex + 1);
+      }
+    }, 5000);
+
+    return () => {
+      clearTimeout(autoTime);
+    };
+  }, [currIndex, newGame.length, setcurrIndex]);
+
   return (
-    <div className="mt-8 grid grid-cols-6 px-24 gap-3">
+    <div className="sm:hidden mt-8 grid grid-cols-6 px-24 gap-3">
       {newGame.map((game, index) => (
         <span
           onClick={() => handleClickChangeImg(index)}

@@ -1,3 +1,8 @@
+import { IoGameControllerOutline } from "react-icons/io5";
+import { TfiHarddrive } from "react-icons/tfi";
+import { BsNewspaper } from "react-icons/bs";
+import { AiOutlineShopping, AiOutlineQuestionCircle } from "react-icons/ai";
+
 import ps5Logo from "../assets/image/ps5.png";
 import ps4Logo from "../assets/image/ps4.png";
 import psVrLogo from "../assets/image/ps-vr.png";
@@ -53,6 +58,7 @@ import youtube from "../assets/image/youtube.png";
 export const navArray = [
   {
     title: "Game",
+    iconsm: <IoGameControllerOutline className="text-2xl text-[#858585]" />,
     item: {
       item1: [
         {
@@ -76,6 +82,7 @@ export const navArray = [
   },
   {
     title: "Hardware",
+    iconsm: <TfiHarddrive className="text-2xl text-[#858585]" />,
     item: {
       item1: [
         {
@@ -110,6 +117,7 @@ export const navArray = [
   },
   {
     title: "News",
+    iconsm: <BsNewspaper className="text-2xl text-[#858585]" />,
     item: {
       item1: [
         {
@@ -123,6 +131,7 @@ export const navArray = [
   },
   {
     title: "Shop",
+    iconsm: <AiOutlineShopping className="text-2xl text-[#858585]" />,
     item: {
       item1: false,
       item2: ["Retail Store"],
@@ -130,6 +139,7 @@ export const navArray = [
   },
   {
     title: "Support",
+    iconsm: <AiOutlineQuestionCircle className="text-2xl text-[#858585]" />,
     item: {
       item1: [
         {

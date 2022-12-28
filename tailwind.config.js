@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: { min: "390px", max: "767px" },
+      sm: { min: "300px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
       md: { min: "768px", max: "1023px" },
@@ -20,6 +20,7 @@ module.exports = {
         cardSd2: "0 4px 16px 0 rgb(0 0 0 /0.8)",
         socialCardSd: "0 4px 8px 0 rgb(0 0 0 /0.16)",
         socialCardSd2: "0 4px 16px 0 rgb(0 0 0 /0.16)",
+        shadowNav: "-4px 10px 27px #ccc",
       },
       colors: {
         colorSilver: "rgb(107 107 107 /1)",

@@ -13,7 +13,7 @@ const Card = ({ card, classes }) => {
         />
       </a>
       <h4
-        className={`md:text-2xl text-[1.75rem] mt-7 font-medium text-center text-white ${
+        className={`md:text-2xl text-[1.75rem] sm:mt-3 mt-7 font-medium text-center text-white ${
           classes ? classes : ""
         } ${card.newClass ? "newClass" : ""}`}
       >

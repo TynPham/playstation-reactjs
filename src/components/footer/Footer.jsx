@@ -4,8 +4,8 @@ import { footerData } from "../../data/listData";
 
 const Footer = () => {
   return (
-    <div className="footer bg-[#00439c] pt-12 mt-[7.5rem]">
-      <div className="grid grid-cols-2 grid-rows-[2fr_1fr] bg-[#00439c] md:px-16 px-24">
+    <div className="footer bg-[#00439c] sm:pt-6 pt-12 sm:mt-0 md:mt-0 mt-[7.5rem]">
+      <div className="grid sm:grid-cols-1 grid-cols-2 sm:grid-rows-none grid-rows-[2fr_1fr] bg-[#00439c] sm:px-6 sm:gap-8 md:px-16 px-24">
         <div className="mt-6">
           <img
             className="w-[100px]"

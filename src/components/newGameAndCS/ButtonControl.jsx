@@ -37,7 +37,7 @@ const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
   };
 
   return (
-    <div className="absolute top-16 right-32 flex gap-2">
+    <div className="absolute sm:top-4 md:top-12 top-16 sm:right-4 md:right-20 right-32 flex gap-2">
       <span
         ref={prevRef}
         className="p-[2px] rounded-full transition-all clickable"
