@@ -66,17 +66,17 @@ const NavLarge = () => {
   return (
     <ul
       ref={ulRef}
-      className="flex items-center gap-2 sm:hidden sm:bg-white sm:left-0 sm:top-16 sm:w-full sm:h-full sm:px-6"
+      className="sm:hidden sm:bg-white sm:left-0 sm:top-16 sm:w-full sm:h-full sm:px-6 flex items-center gap-2"
     >
       {navArray.map((result, index) => (
         <li
           onClick={handleClickOpen}
           key={index}
-          className="flex items-center sm:justify-between gap-[2px] cursor-pointer hover:text-[#0070d1] group"
+          className="sm:justify-between flex items-center gap-2p cursor-pointer hover:text-hover group"
         >
-          <span className="text-[0.875rem] font-semibold">{result.title}</span>
-          <FaAngleDown className="mt-1 text-[#999] transition-all group-hover:text-[#0070d1] sm:-rotate-90" />
-          <div className="subNav max-h-[220px] w-full bg-white absolute top-0 left-0 z-[-1] transition-all duration-500 opacity-0 invisible">
+          <span className="text-0.875 font-semibold">{result.title}</span>
+          <FaAngleDown className="sm:-rotate-90 mt-1 text-light transition-all group-hover:text-hover" />
+          <div className="subNav max-h-220 w-full bg-white absolute top-0 left-0 -z-1 transition-all duration-500 opacity-0 invisible">
             <SecondaryNav item1={result.item.item1} item2={result.item.item2} />
           </div>
         </li>

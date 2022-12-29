@@ -16,8 +16,6 @@ const CardSlide = () => {
       <Swiper
         className="mt-16 px3-6 pb4"
         modules={[Navigation, Pagination]}
-        // spaceBetween={20}
-
         navigation
         pagination={{ clickable: true }}
         loop={true}

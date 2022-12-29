@@ -29,6 +29,7 @@ const ListGameSm = ({
 
   return (
     <Swiper
+      allowTouchMove={false}
       onBeforeInit={(swiper) => {
         swiperRef.current = swiper;
       }}
@@ -49,9 +50,9 @@ const ListGameSm = ({
         <SwiperSlide key={index}>
           <span
             onClick={() => handleClickChangeImg(index)}
-            className="hover:translate-y-[-0.75rem] rounded-[1rem] transition-all flex items-end justify-center group hover:shadow-gameSd p-[2px]"
+            className="rounded-2xl transition-all flex items-end justify-center p-2p group hover:shadow-gameSd hover:-translate-y-3"
           >
-            <button className="rounded-[1rem] overflow-hidden w-full">
+            <button className="rounded-2xl overflow-hidden w-full">
               <img src={game.imgMin} alt="min" />
             </button>
           </span>
@@ -60,14 +61,14 @@ const ListGameSm = ({
       <button
         ref={btnPrevRef}
         onClick={handleClickPrev}
-        className="btn-prev absolute top-1/2 left-[15%] z-10"
+        className="btn-prev absolute top-1/2 left-15% z-10"
       >
         <MdOutlineNavigateBefore className="inline text-3xl" />
       </button>
       <button
         ref={btnNextRef}
         onClick={handleClickNext}
-        className="btn-next absolute top-1/2 right-[15%] z-10"
+        className="btn-next absolute top-1/2 right-15% z-10"
       >
         <MdOutlineNavigateNext className="inline text-3xl" />
       </button>

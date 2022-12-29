@@ -4,12 +4,12 @@ import SocialCard from "./SocialCard";
 
 const SocialMedia = () => {
   return (
-    <div className="bg-[#f5f7fa] sm:pt-0 pt-8">
-      <h3 className="text-center sm:text[2rem] text-[2.15rem] font-light">
+    <div className="sm:pt-0 bg-social pt-8 ">
+      <h3 className="sm:text-2r text-center text-2.15r font-light">
         Follow us on social media
       </h3>
       <div className="flex justify-center mt-14">
-        <div className="grid sm:grid-cols-2 grid-cols-4 justify-items-center sm:w-full w-[80%] sm:px-12 sm:pb-24 md:pb-24 sm:gap-4 px-20">
+        <div className="sm:grid-cols-2 sm:w-full sm:px-12 sm:pb-24 sm:gap-4 md:pb-24 grid grid-cols-4 justify-items-center w-4/5 px-20 pb-7.5r">
           {socialMedia.map((social, index) => (
             <div className="text-center" key={index}>
               <SocialCard social={social} />

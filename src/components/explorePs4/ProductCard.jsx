@@ -8,18 +8,18 @@ const ProductCard = ({ product }) => {
       </div>
       <div className="pl-4">
         <div className="flex flex-col justify-center">
-          <div className="text-black sm:text-center">
-            <h3 className="md:text-[2rem] text-[2.65rem] font-light">
+          <div className="sm:text-center text-black">
+            <h3 className="md:text-2r text-2.65r font-light">
               {product.contents.title}
             </h3>
-            <p className="md:text-[1.2rem] text-[1.3rem] opacity-70 mt-3 max-w-[400px] inline">
+            <p className="md:text-1.2r text-1.3r opacity-70 mt-3 max-w-400 inline">
               {product.contents.content}
             </p>
           </div>
-          <button className="sm:my-4 sm:m-auto p-[2px] rounded-[2rem] mt-8 hover:outline-[3px] hover:outline hover:outline-[#0070cc] text-left w-[max-content] ">
+          <button className="sm:my-4 sm:m-auto p-2p rounded-2 mt-8 hover:outline-3p hover:outline hover:outline-btn text-left w-max">
             <a
               href="https://www.facebook.com/"
-              className="rounded-[2rem] py-2 px-4 bg-[#0070cc] text-white font-semibold text-lg flex items-center"
+              className="rounded-2 py-2 px-4 bg-signIn text-white font-semibold text-lg flex items-center"
             >
               Learn more
             </a>

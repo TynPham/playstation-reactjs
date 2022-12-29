@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 const LisrHardware = ({ indexActive, setIndexActive, listHardware }) => {
   return (
     <Swiper
-      className="sm:mt-8 md:mt-10 grid grid-cols-7 md:px-20 px-6 gap-4"
+      className="sm:mt-8 md:mt-10 md:px-20 grid grid-cols-7 px-6 gap-4"
       modules={[Navigation]}
       onSlideNextTransitionStart={() => {
         if (indexActive === listHardware.length - 1) {
@@ -36,7 +36,7 @@ const LisrHardware = ({ indexActive, setIndexActive, listHardware }) => {
         <SwiperSlide
           key={index}
           onClick={() => setIndexActive(index)}
-          className={`group flex items-center justify-center relative overflow-hidden md:w-[unset] w-[200px] rounded-[1rem] transition-all ${
+          className={`md:w-unset group flex items-center justify-center relative overflow-hidden w-200 rounded-2xl transition-all ${
             index === indexActive ? "active" : ""
           }`}
         >
@@ -49,11 +49,11 @@ const LisrHardware = ({ indexActive, setIndexActive, listHardware }) => {
               <img
                 src={hardware.imageMin}
                 alt="hardware"
-                className="md:max-w-[65px] max-w-[130px] md:mb-[5.5rem] mb-6"
+                className="md:max-w-65 max-w-130 md:mb-55r mb-6"
               />
             </div>
             <span
-              className={`md:text-[15px] text-[17px] max-w-[95%] absolute md:top-[40%] top-[70%]`}
+              className={`md:text-15p text-17p max-w-95% absolute md:top-40% top-70%`}
             >
               {hardware.smallTitle ? hardware.smallTitle : hardware.title}
             </span>

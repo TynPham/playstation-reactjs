@@ -28,10 +28,10 @@ const ListGame = ({
           key={index}
           className={`${
             index === currIndex ? "active" : ""
-          } hover:translate-y-[-0.75rem] rounded-[1rem] transition-all flex items-end justify-center group hover:shadow-gameSd max-w-[210px] p-[2px]`}
+          } rounded-2xl transition-all flex items-end justify-center max-w-210 p-2p group hover:shadow-gameSd hover:-translate-y-3`}
         >
           <button
-            className={`rounded-[1rem] overflow-hidden w-full opacity-70 group-hover:opacity-100 ${
+            className={`rounded-2xl overflow-hidden w-full opacity-70 group-hover:opacity-100 ${
               index === currIndex ? "opacity-100" : ""
             }`}
           >

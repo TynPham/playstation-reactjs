@@ -37,22 +37,22 @@ const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
   };
 
   return (
-    <div className="absolute sm:top-4 md:top-12 top-16 sm:right-4 md:right-20 right-32 flex gap-2">
+    <div className="sm:top-4 sm:right-4 md:top-12 md:right-20 absolute top-16 right-32 flex gap-2">
       <span
         ref={prevRef}
-        className="p-[2px] rounded-full transition-all clickable"
+        className="p-2p rounded-full transition-all clickable"
       >
         <button
           onClick={handleClickPrev}
-          className="p-[0.85rem] rounded-full bg-white "
+          className="p-0.85r rounded-full bg-white "
         >
           <GrPrevious className="text-xl" />
         </button>
       </span>
-      <span ref={nextRef} className="p-[2px] rounded-full transition-all">
+      <span ref={nextRef} className="p-2p rounded-full transition-all">
         <button
           onClick={handleClickNext}
-          className="p-[0.85rem] rounded-full bg-white notClick"
+          className="p-0.85r rounded-full bg-white notClick"
         >
           <GrNext className="text-xl" />
         </button>

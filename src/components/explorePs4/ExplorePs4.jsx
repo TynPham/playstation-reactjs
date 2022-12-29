@@ -7,7 +7,7 @@ const ExplorePs4 = () => {
   return (
     <div className="sm:pb-8 pb-32">
       <Title data={exporePs4.titles} />
-      <div className="grid sm:grid-cols-1 grid-cols-3 sm:px-0 md:px-24 px-40 mt-11">
+      <div className="sm:grid-cols-1 sm:px-0 md:px-24 grid grid-cols-3 px-40 mt-11">
         {exporePs4.data.map((product, index) => (
           <div key={index}>
             <ProductCard product={product} />

@@ -7,13 +7,13 @@ const Card = ({ card, classes }) => {
         <img
           src={card.image}
           alt="card"
-          className={`rounded-[1rem] shadow-cardSd hover:scale-[1.02] hover:shadow-cardSd2 transition-all duration-300 ${
-            card.newClass ? "rounded-[0.5rem]" : ""
+          className={`rounded-2xl shadow-cardSd hover:scale-1.02 hover:shadow-cardSd2 transition-all duration-300 ${
+            card.newClass ? "rounded-lg" : ""
           }`}
         />
       </a>
       <h4
-        className={`md:text-2xl text-[1.75rem] sm:mt-3 mt-7 font-medium text-center text-white ${
+        className={`sm:mt-3 md:text-2xl text-1.75r mt-7 font-medium text-center text-white ${
           classes ? classes : ""
         } ${card.newClass ? "newClass" : ""}`}
       >

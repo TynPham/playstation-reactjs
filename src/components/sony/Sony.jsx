@@ -10,7 +10,7 @@ const Sony = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <div className="w-[75px] h-9 ml-2 mr-2">
+        <div className="w-75 h-9 ml-2 mr-2">
           <img className="w-full h-full object-contain" src={logo} alt="sony" />
         </div>
       </a>

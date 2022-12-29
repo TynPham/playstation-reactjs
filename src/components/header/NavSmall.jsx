@@ -51,8 +51,8 @@ const NavSmall = () => {
             {result.iconsm}
             <p className="text-base font-semibold">{result.title}</p>
           </span>
-          <FaAngleRight className="text-[#858585]" />
-          <div className="subNav w-4/5 h-screen px-4 bg-white absolute top-0 left-full z-[-1] transition-all duration-500 opacity-0 invisible shadow-shadowNav">
+          <FaAngleRight className="text-light2" />
+          <div className="subNav w-4/5 h-screen px-4 bg-white absolute top-0 left-full -z-1 transition-all duration-500 opacity-0 invisible shadow-shadowNav">
             <SecondaryNav item1={result.item.item1} item2={result.item.item2} />
           </div>
         </li>
