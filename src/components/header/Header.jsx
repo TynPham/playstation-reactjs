@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { Modal, Input } from "antd";
 import { HiOutlineSearch } from "react-icons/hi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { PlayStaIcon } from "../../logo";
@@ -7,6 +8,8 @@ import NavLarge from "./NavLarge";
 import { DataHeaderNav } from "../../context/context";
 import NavSmall from "./NavSmall";
 
+const { Search } = Input;
+
 const Header = () => {
   const ulRef = useRef(null);
   const headerRef = useRef(null);
@@ -14,6 +17,17 @@ const Header = () => {
   const menuRef = useRef(null);
   const closeRef = useRef(null);
   const navSmRef = useRef(null);
+
+  const [open, setOpen] = useState(false);
+  const showModalSearch = () => {
+    setOpen(true);
+  };
+  const handleOk = () => {
+    setOpen(false);
+  };
+  const handleCancel = () => {
+    setOpen(false);
+  };
 
   const handleClickMenu = () => {
     menuRef.current.classList.add("hiddenEl");
@@ -74,9 +88,30 @@ const Header = () => {
               >
                 <AiOutlineClose />
               </button>
-              <button className="search text-xl">
-                <HiOutlineSearch />
-              </button>
+              <>
+                <button className="search text-xl" onClick={showModalSearch}>
+                  <HiOutlineSearch />
+                </button>
+                <Modal
+                  open={open}
+                  style={{
+                    top: 85,
+                    right: "-50%",
+                  }}
+                  onOk={handleOk}
+                  onCancel={handleCancel}
+                  closable={false}
+                  footer={[]}
+                >
+                  <Search
+                    placeholder="Search Playstation.com"
+                    allowClear
+                    enterButton
+                    size="large"
+                    onSearch={() => console.log("updating..")}
+                  />
+                </Modal>
+              </>
             </div>
           </div>
         </div>
