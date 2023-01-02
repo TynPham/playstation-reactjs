@@ -82,6 +82,10 @@ body {
 .notClick:hover {
   cursor: not-allowed;
 }
+.opacityable {
+  opacity: 1;
+  cursor: pointer;
+}
 
 .newClass {
   font-size: 1.125rem;

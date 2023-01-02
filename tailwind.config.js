@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: { min: "300px", max: "767px" },
+      sm: { min: "200px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
       md: { min: "768px", max: "1023px" },
@@ -24,9 +24,13 @@ module.exports = {
       },
       colors: {
         colorSilver: "rgb(107 107 107 /1)",
+        colorTextsi: "rgba(0,0,0,0.87)",
+        colorInputsi: "rgba(0,0,0,0.55)",
+        textsi: "#3e66d5",
         hover: "#0070d1",
         light: "#999",
         light2: "#858585",
+        silver: "#7e7e7e",
       },
       backgroundImage: {
         bgLinear: "linear-gradient(rgb(243 243 243 /1),rgb(255 255 255 /1))",
@@ -34,25 +38,32 @@ module.exports = {
       backgroundColor: {
         footer: "#00439c",
         signIn: "#0070cc",
+        signInbtn: "#3e66d5",
         curMonth: "#26254f",
         newGame: "#121314",
         social: "#f5f7fa",
+        sonySignIn: "#141414",
       },
       width: {
         75: "75px",
         100: "100px",
         120: "120px",
         200: "200px",
+        400: "400px",
         "12%": "12%",
         "55%": "55%",
         "82%": "82%",
         "85%": "85%",
+        "90w": "90vw",
         unset: "unset",
       },
       height: {
         "20r": "20rem",
         "26r": "26rem",
         "30r": "30rem",
+        56: "56px",
+        96: "96px",
+        115: "115px",
         750: "750px",
         900: "900px",
         1000: "1000px",
@@ -117,6 +128,7 @@ module.exports = {
         70: "70%",
       },
       padding: {
+        28: "28px",
         "0.85r": "0.85rem",
         "7.5r": "7.5rem",
         "0-2r": "0 2rem",
@@ -141,6 +153,9 @@ module.exports = {
       },
       scale: {
         1.02: "1.02",
+      },
+      borderColor: {
+        inputsi: "#c8c8c8",
       },
     },
   },

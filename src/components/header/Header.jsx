@@ -70,9 +70,11 @@ const Header = () => {
             <NavSmall />
           </div>
           <div className="flex items-center">
-            <button className="sm:mr-0 sign-in bg-signIn text-white font-medium py-0 px-2 rounded-2xl mr-5">
-              Sign In
-            </button>
+            <Link to="/signIn">
+              <button className="sm:mr-0 sign-in bg-signIn text-white font-medium py-0 px-2 rounded-2xl mr-5">
+                Sign In
+              </button>
+            </Link>
             <div className="sm:absolute sm:left-5 flex items-center gap-4">
               <button
                 ref={menuRef}
