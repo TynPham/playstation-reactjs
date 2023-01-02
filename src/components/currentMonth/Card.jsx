@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ card, classes }) => {
   return (
     <>
-      <a href="https://www.facebook.com/">
+      <a href="/">
         <img
           src={card.image}
           alt="card"

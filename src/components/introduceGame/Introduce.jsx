@@ -56,7 +56,7 @@ const Introduce = ({ game, classChange }) => {
           </p>
         </div>
         <a
-          href="https://www.facebook.com/"
+          href="/"
           className="sm:p-10-2 p-14.5-2 rounded-2 hover:outline-3p hover:outline hover:outline-white transition-all duration-100"
         >
           <button className="sm:py-1 sm:px2 sm:mt-4 py-2 px-4 bg-white font-semibold text-lg rounded-2 mt-8 invisible bottomToTop delayAnimation">

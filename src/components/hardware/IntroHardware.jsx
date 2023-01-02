@@ -21,7 +21,7 @@ const IntroHardware = ({ listHardware, indexActive }) => {
             </div>
             <button className="sm:m-auto sm:mt-4 p-2p rounded-2 mt-5 text-left w-max hover:outline-[3px] hover:outline hover:outline-btn">
               <a
-                href="https://www.facebook.com/"
+                href="/"
                 className=" rounded-2 py-2 px-4 bg-btn text-white font-semibold text-lg flex items-center"
               >
                 Learn more

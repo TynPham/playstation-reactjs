@@ -24,21 +24,21 @@ const Footer = () => {
           <ul>
             {footerData[0].map((data, index) => (
               <li className="mb-2" key={index}>
-                <a href="https://www.facebook.com/">{data}</a>
+                <a href="/">{data}</a>
               </li>
             ))}
           </ul>
           <ul>
             {footerData[1].map((data, index) => (
               <li className="mb-2" key={index}>
-                <a href="https://www.facebook.com/">{data}</a>
+                <a href="/">{data}</a>
               </li>
             ))}
           </ul>
           <ul>
             {footerData[2].map((data, index) => (
               <li className="mb-2" key={index}>
-                <a href="https://www.facebook.com/">{data}</a>
+                <a href="/">{data}</a>
               </li>
             ))}
           </ul>

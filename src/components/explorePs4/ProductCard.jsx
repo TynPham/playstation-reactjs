@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
           </div>
           <button className="sm:my-4 sm:m-auto p-2p rounded-2 mt-8 hover:outline-3p hover:outline hover:outline-btn text-left w-max">
             <a
-              href="https://www.facebook.com/"
+              href="/"
               className="rounded-2 py-2 px-4 bg-signIn text-white font-semibold text-lg flex items-center"
             >
               Learn more
