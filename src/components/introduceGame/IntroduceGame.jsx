@@ -42,21 +42,6 @@ const IntroduceGame = () => {
   return (
     <div className="sm:mt-16">
       <ListIntroduce newGame={newGame} currIndex={currIndex} />
-      {/* {width >= breakpoint ? (
-        <ListGame
-          newGame={newGame}
-          currIndex={currIndex}
-          setcurrIndex={setcurrIndex}
-          handleClickChangeImg={handleClickChangeImg}
-        />
-      ) : (
-        <ListGameSm
-          newGame={newGame}
-          handleClickChangeImg={handleClickChangeImg}
-          handleSlideNext={handleSlideNext}
-          handleSlidePrev={handleSlidePrev}
-        />
-      )} */}
       <ListGame
         newGame={newGame}
         handleClickChangeImg={handleClickChangeImg}
@@ -64,6 +49,7 @@ const IntroduceGame = () => {
         handleSlidePrev={handleSlidePrev}
         currIndex={currIndex}
         setcurrIndex={setcurrIndex}
+        width={width}
       />
     </div>
   );

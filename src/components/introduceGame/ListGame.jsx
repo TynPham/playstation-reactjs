@@ -13,12 +13,16 @@ const ListGame = ({
   handleSlidePrev,
   currIndex,
   setcurrIndex,
+  width,
 }) => {
   const swiperRef = useRef(null);
   const btnPrevRef = useRef(null);
   const btnNextRef = useRef(null);
 
   useEffect(() => {
+    if (width <= 738) {
+      return;
+    }
     const autoTime = setTimeout(() => {
       if (currIndex === newGame.length - 1) {
         setcurrIndex(0);
@@ -30,7 +34,7 @@ const ListGame = ({
     return () => {
       clearTimeout(autoTime);
     };
-  }, [currIndex, newGame.length, setcurrIndex]);
+  }, [currIndex, newGame.length, setcurrIndex, width]);
 
   const handleClickPrev = () => {
     swiperRef.current.slidePrev();
