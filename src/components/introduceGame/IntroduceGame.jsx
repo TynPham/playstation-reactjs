@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { newGame } from "../../data/listData";
 import ListGame from "./ListGame";
-import ListGameSm from "./ListGameSm";
 import ListIntroduce from "./ListIntroduce";
-
-const breakpoint = 738;
 
 const IntroduceGame = () => {
   const [currIndex, setcurrIndex] = useState(0);
@@ -45,7 +42,7 @@ const IntroduceGame = () => {
   return (
     <div className="sm:mt-16">
       <ListIntroduce newGame={newGame} currIndex={currIndex} />
-      {width >= breakpoint ? (
+      {/* {width >= breakpoint ? (
         <ListGame
           newGame={newGame}
           currIndex={currIndex}
@@ -59,7 +56,15 @@ const IntroduceGame = () => {
           handleSlideNext={handleSlideNext}
           handleSlidePrev={handleSlidePrev}
         />
-      )}
+      )} */}
+      <ListGame
+        newGame={newGame}
+        handleClickChangeImg={handleClickChangeImg}
+        handleSlideNext={handleSlideNext}
+        handleSlidePrev={handleSlidePrev}
+        currIndex={currIndex}
+        setcurrIndex={setcurrIndex}
+      />
     </div>
   );
 };

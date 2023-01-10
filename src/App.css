@@ -125,6 +125,9 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
+.swiperSm .swiper-wrapper {
+  height: 10rem !important;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.25rem !important;
@@ -227,6 +230,9 @@ body {
   }
   .px3-6 {
     padding: 0 1rem !important;
+  }
+  .swiperSm .swiper-wrapper {
+    height: 100% !important;
   }
 }
 
