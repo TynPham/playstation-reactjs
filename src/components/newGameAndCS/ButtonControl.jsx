@@ -11,14 +11,14 @@ const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
       return;
     }
 
+    NewGameRef.current.style.left = "-100%";
+    ComingSoonRef.current.style.left = "0";
+
     prevRef.current.classList.remove("clickable");
     prevRef.current.childNodes[0].classList.add("notClick");
 
     nextRef.current.classList.add("clickable");
     nextRef.current.childNodes[0].classList.remove("notClick");
-
-    NewGameRef.current.style.left = "-100%";
-    ComingSoonRef.current.style.left = "0";
   };
 
   const handleClickNext = () => {
@@ -26,14 +26,14 @@ const ButtonControl = ({ NewGameRef, ComingSoonRef }) => {
       return;
     }
 
+    NewGameRef.current.style.left = "0";
+    ComingSoonRef.current.style.left = "100%";
+
     nextRef.current.classList.remove("clickable");
     nextRef.current.childNodes[0].classList.add("notClick");
 
     prevRef.current.classList.add("clickable");
     prevRef.current.childNodes[0].classList.remove("notClick");
-
-    NewGameRef.current.style.left = "0";
-    ComingSoonRef.current.style.left = "100%";
   };
 
   return (

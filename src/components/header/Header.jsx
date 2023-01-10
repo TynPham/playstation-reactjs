@@ -6,7 +6,6 @@ import { PlayStaIcon } from "../../logo";
 import { Link } from "react-router-dom";
 import NavLarge from "./NavLarge";
 import { DataHeaderNav } from "../../context/context";
-import NavSmall from "./NavSmall";
 
 const { Search } = Input;
 
@@ -16,7 +15,6 @@ const Header = () => {
   const logoRef = useRef(null);
   const menuRef = useRef(null);
   const closeRef = useRef(null);
-  const navSmRef = useRef(null);
 
   const [open, setOpen] = useState(false);
   const showModalSearch = () => {
@@ -32,13 +30,13 @@ const Header = () => {
   const handleClickMenu = () => {
     menuRef.current.classList.add("hiddenEl");
     closeRef.current.classList.add("blockEl");
-    navSmRef.current.classList.add("blockEl");
+    ulRef.current.classList.add("blockEl");
   };
 
   const handleClickClose = () => {
     menuRef.current.classList.remove("hiddenEl");
     closeRef.current.classList.remove("blockEl");
-    navSmRef.current.classList.remove("blockEl");
+    ulRef.current.classList.remove("blockEl");
   };
 
   return (
@@ -49,7 +47,6 @@ const Header = () => {
         logoRef,
         menuRef,
         closeRef,
-        navSmRef,
       }}
     >
       <div
@@ -67,7 +64,6 @@ const Header = () => {
               </span>
             </Link>
             <NavLarge />
-            <NavSmall />
           </div>
           <div className="flex items-center">
             <Link to="/signIn">

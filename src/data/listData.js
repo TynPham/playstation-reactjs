@@ -58,7 +58,9 @@ import youtube from "../assets/image/youtube.png";
 export const navArray = [
   {
     title: "Game",
-    iconsm: <IoGameControllerOutline className="text-2xl text-[#858585]" />,
+    iconsm: (
+      <IoGameControllerOutline className="sm:block hidden text-2xl text-[#858585]" />
+    ),
     item: {
       item1: [
         {
@@ -82,7 +84,9 @@ export const navArray = [
   },
   {
     title: "Hardware",
-    iconsm: <TfiHarddrive className="text-2xl text-[#858585]" />,
+    iconsm: (
+      <TfiHarddrive className="sm:block hidden text-2xl text-[#858585]" />
+    ),
     item: {
       item1: [
         {
@@ -117,7 +121,7 @@ export const navArray = [
   },
   {
     title: "News",
-    iconsm: <BsNewspaper className="text-2xl text-[#858585]" />,
+    iconsm: <BsNewspaper className="sm:block hidden text-2xl text-[#858585]" />,
     item: {
       item1: [
         {
@@ -131,7 +135,9 @@ export const navArray = [
   },
   {
     title: "Shop",
-    iconsm: <AiOutlineShopping className="text-2xl text-[#858585]" />,
+    iconsm: (
+      <AiOutlineShopping className="sm:block hidden text-2xl text-[#858585]" />
+    ),
     item: {
       item1: false,
       item2: ["Retail Store"],
@@ -139,7 +145,9 @@ export const navArray = [
   },
   {
     title: "Support",
-    iconsm: <AiOutlineQuestionCircle className="text-2xl text-[#858585]" />,
+    iconsm: (
+      <AiOutlineQuestionCircle className="sm:block hidden text-2xl text-[#858585]" />
+    ),
     item: {
       item1: [
         {

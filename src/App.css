@@ -77,7 +77,6 @@ body {
 }
 .notClick {
   opacity: 0.7;
-  pointer-events: none;
 }
 .notClick:hover {
   cursor: not-allowed;
