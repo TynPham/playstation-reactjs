@@ -36,14 +36,25 @@ const ListGame = ({
     };
   }, [currIndex, newGame.length, setcurrIndex, width]);
 
+  useEffect(() => {
+    if (width <= 738) {
+      setcurrIndex(0);
+    }
+  }, [width, setcurrIndex]);
+
   const handleClickPrev = () => {
+    if (currIndex === 0) {
+      return;
+    }
     swiperRef.current.slidePrev();
     handleSlidePrev();
   };
 
   const handleClickNext = () => {
+    if (currIndex === newGame.length - 1) {
+      return;
+    }
     swiperRef.current.slideNext();
-    console.log("e");
     handleSlideNext();
   };
 
@@ -54,18 +65,18 @@ const ListGame = ({
         swiperRef.current = swiper;
       }}
       className="sm:block swiperSm mt-4"
-      loop={true}
+      loop={false}
       breakpoints={{
         200: {
           slidesPerView: 1,
           spaceBetween: 10,
         },
         738: {
-          slidesPerView: 7,
+          slidesPerView: newGame.length,
           spaceBetween: 5,
         },
         1024: {
-          slidesPerView: 6,
+          slidesPerView: newGame.length,
           spaceBetween: 30,
         },
       }}

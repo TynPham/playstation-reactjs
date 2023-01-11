@@ -24,7 +24,6 @@ const NavLarge = () => {
         }
       }
     }
-    console.log(window.innerWidth);
     const svgClick = parentElem.querySelector(".svgElement");
     const listSVG = ulRef.current.querySelectorAll(".svgElement");
     const listSVGdif = Object.values(listSVG).filter(

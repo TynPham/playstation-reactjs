@@ -1,13 +1,11 @@
 import React, { useRef, useState } from "react";
-import { Modal, Input } from "antd";
 import { HiOutlineSearch } from "react-icons/hi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { PlayStaIcon } from "../../logo";
 import { Link } from "react-router-dom";
 import NavLarge from "./NavLarge";
 import { DataHeaderNav } from "../../context/context";
-
-const { Search } = Input;
+import ModalSearch from "../modal/ModalSearch";
 
 const Header = () => {
   const ulRef = useRef(null);
@@ -90,25 +88,11 @@ const Header = () => {
                 <button className="search text-xl" onClick={showModalSearch}>
                   <HiOutlineSearch />
                 </button>
-                <Modal
+                <ModalSearch
                   open={open}
-                  style={{
-                    top: 85,
-                    right: "-50%",
-                  }}
-                  onOk={handleOk}
-                  onCancel={handleCancel}
-                  closable={false}
-                  footer={[]}
-                >
-                  <Search
-                    placeholder="Search Playstation.com"
-                    allowClear
-                    enterButton
-                    size="large"
-                    onSearch={() => console.log("updating..")}
-                  />
-                </Modal>
+                  handleCancel={handleCancel}
+                  handleOk={handleOk}
+                />
               </>
             </div>
           </div>
